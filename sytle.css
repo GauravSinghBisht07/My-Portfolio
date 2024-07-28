@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background-color: black;
+    box-shadow: 0px 1px 9px rgba(171, 171, 168, 0.632);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+
+header h2{
+    color: white;
+}
+header h2 span{
+    color: rgba(255, 255, 0, 0.956);
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+nav ul li{
+    list-style: none;
+    transition: 0.3s ease;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+nav ul li a:hover{
+    color: yellow;
+}
+nav ul li:hover{
+    transform: scale(1.1);
+}
+
+
+/* ///////////////////////////home content css*/
+
+.home-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px 100px;
+    margin-bottom: 50px;
+}
+
+.person-image{
+    padding: 0 80px;
+}
+
+.person-image img{
+    height: 190px;
+    width: 190px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 17px yellow;
+    animation: updown 1.5s alternate  infinite;
+    filter: drop-shadow(0 0 10px pink);
+}
+
+@keyframes updown{
+    from{ transform: translateY(-10px)}
+    to{transform: translateY(10px)}
+}
+
+.home-items{
+    border-left: 2px solid yellow;
+    padding: 5px 30px;
+}
+
+.home-items h1{
+    color: white;
+    font-size: 40px;
+}
+.home-items span{
+    color: rgba(246, 246, 10, 0.968);
+    font-size: 40px;
+}
+
+.home-p{
+    padding: 38px 0;
+}
+#home-p-span{
+    color: rgba(246, 246, 10, 0.968);
+    font-size: 28px;
+}
+.home-items h3{
+    color: white;
+    padding: 10px 0;
+    font-size: 19px;
+    font-weight: 500;
+    
+}
+
+.home-items button{
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgba(79, 77, 77, 0.651);
+}
+
+.home-items button:hover{
+    background-color: rgb(35, 34, 34);
+}
+
+
+/* ////////////////////////////////////about content css */
+
+
+.about-content{
+    padding: 90px 100px;
+    /* margin-top: 200px; */
+}
+
+.about-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-items h1{
+    color: white;
+}
+
+.about-p{
+    color: white;
+    font-size: 21px;
+    line-height: 35px;
+}
+
+.about-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 90px;
+}
+
+#about-p1{
+    padding: 23px 0;
+}
+#about-p1 span{
+    color: yellow;
+}
+
+#about-p2 span{
+    color: yellow;
+}
+#about-p2{
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.about-items h1 {
+    color: skyblue;
+    padding: 30px 0;
+}
+
+
+
+/* //////////////////////////////////////skills content css */
+
+.skills-content{
+    margin-top: 220px;
+    padding: 120px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-content h1{
+    color: skyblue;
+}
+
+.skillbox{
+    height: 320px;
+    width: 399px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 70px;
+    box-shadow: 0 0 10px rgba(208, 204, 204, 0.902);
+    filter: drop-shadow(0 0 2px skyblue);
+}
+
+.skillbox h2{
+    text-align: center;
+    padding: 38px 0;
+    font-weight: 500;
+}
+
+.skills-name{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.skills-name1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills-name1 span{
+    margin-top: 28px;
+    font-weight: 400;
+}
+.skills-name1 span i{
+    margin-right: 7px;
+    font-weight: 600;
+}
+
+
+.skills-name2{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-name2 span{
+    margin-top: 28px;
+    font-weight: 400;
+}
+.skills-name2 span i{
+    margin-right: 7px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* //////////////////////////////projects content css */
+
+
+.projects-content{
+    padding: 130px 100px;
+}
+
+.projects-content h1{
+    color: skyblue;
+    text-align: center;
+}
+
+.all-projects{
+    width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 40px auto;
+}
+
+.projects-data{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transition: 1.2s ease;
+}
+
+.im img{
+    width: 600px;
+    opacity: .5;
+}
+
+.projects-info{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.im{
+    position: relative;
+}
+.one{
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 19px;
+    background-color: rgb(35, 34, 34);
+    text-decoration: none;
+    top: 79%;
+    left: 40%;
+    z-index: 1;
+}
+.one:hover{
+    background-color: rgba(79, 77, 77, 0.651);
+}
+
+
+
+.btn{
+    border: none;
+    margin: 10px 267px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.btn button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+
+
+
+/* ///////////////////// contact content css */
+
+
+.contact-content{
+    padding: 160px 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 100px;
+}
+
+.links i{
+    color: white;
+    margin-top: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.links i:hover{
+    transform: scale(1.2);
+}
+
+.robot img{
+    height: 420px;
+    width: 270px;
+    padding-right: 20px;
+    animation: updown 1.5s alternate  infinite;
+    filter: drop-shadow(0 0 3px skyblue);
+}
+
+@keyframes updown{
+    from{ transform: translateY(-10px)}
+    to{transform: translateY(10px)}
+}
+
+
+
+
+
+/* menubar css ........................................... */
+
+
+.menubar{
+    background-color: rgba(15, 15, 15, 0.883);
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: .7s ease;
+}
+
+.menubar nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 90px;
+}
+
+.menubar nav i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 23px 32px;
+    color: white;
+    font-weight: 300;
+    font-size: 29px;
+    cursor: pointer;
+    background-color: rgba(79, 77, 77, 0.651);
+}
+
+#menubtn{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* ///////////////////////////////responsive css */
+
+
+@media screen and (max-width:991px){
+    .home-items h1{
+        font-size: 32px;
+    }
+    .home-items span{
+        font-size: 27px;
+    }
+
+    #home-p-span {
+        font-size: 21px;
+    }
+    .home-items h3 {
+        font-size: 15px;
+    }
+    .about-p {
+        font-size: 20px;
+    }
+    .contact-content {
+        padding: 160px 246px;
+    }
+    .one {
+        left: 41%;
+    }
+}
+
+@media screen and (max-width: 874px) {
+    .contact-content {
+        padding: 160px 187px;
+    }
+
+    .home-items h1 {
+        font-size: 23px;
+    }
+
+    .home-items span {
+        font-size: 21px;
+    }
+
+    .person-image {
+        padding: 0 0;
+    }
+
+    .about-p {
+        font-size: 18px;
+    }
+    .robot img {
+        height: 389px;
+        width: 245px;
+    }
+    .about-info {
+        padding: 0 38px;
+    }
+}
+
+@media screen and (max-width:774px){
+    .contact-content {
+        padding: 160px 119px;
+    }
+    .activenav{display: none;}
+    
+    #menubtn{
+        display: block;
+    }
+
+    .home-content {
+        flex-direction: column-reverse;
+        padding: 154px 100px;
+    }
+
+    .home-items {
+        margin-top: 80px;
+    }
+
+    .about-content {
+        padding: 90px 63px;
+    }
+
+    .all-projects {
+        width: 500px;
+    }
+    .one {
+        left: 39%;
+    }
+    .im img{
+        width: 500px;
+    }
+
+    .btn {
+        margin: 20px 237px;
+    }
+    
+    .robot img {
+        height: 345px;
+        width: 225px;
+    }
+    .links {
+        padding: 34px 100px;
+    }
+    .about-p {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:696px){
+    .all-projects {
+        width: 413px;
+    }
+    .im img{
+        width: 500px;
+    }
+    .btn {
+        margin: 20px 0px;
+    }
+
+    .home-items h1 {
+        font-size: 27px;
+    }
+
+    .home-items span {
+        font-size: 24px;
+    }
+
+    .home-items h3 {
+        font-size: 16px;
+    }
+    .home-items {
+        margin-top: 46px;
+    }
+    .home-content {
+        flex-direction: column-reverse;
+        padding: 105px 100px;
+    }
+    .one {
+        left: 31%;
+    }
+    .robot img {
+        height: 328px;
+        width: 212px;
+    }
+}
+
+@media screen and (max-width:642px){
+    .contact-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: row;
+        gap: 100px;
+        padding: 0 0;
+    }
+    .robot img {
+        height: 309px;
+        width: 205px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .projects-content {
+        padding: 130px 0px;
+    }
+
+    .all-projects {
+        width: 360px;
+    }
+    .im img{
+        width: 360px;
+    }
+    .home-content {
+        padding: 143px 41px;
+    }
+    .about-content {
+        padding: 90px 10px;
+    }
+    .skillbox {
+        height: 316px;
+        width: 359px;
+    }
+    .one {
+        font-size: 12px;
+        padding: 9px 5px;
+        left: 39%;
+    }
+}
+
+@media screen and (max-width:392px){
+    .skillbox {
+        height: 304px;
+        width: 317px;
+    }
+    .all-projects {
+        width: 323px;
+    }
+    .im img{
+        width: 323px;
+    }
+    .robot img {
+        height: 259px;
+        width: 174px;
+        margin-left: 30px;
+    }
+    .links i {
+        margin-top: 50px;
+        font-size: 27px;
+    }
+    .skills-content {
+        margin-top: 286px;
+    }
+    .projects-content {
+        padding: 188px 0px;
+    }
+    .one {
+        font-size: 9px;
+        padding: 7px 6px;
+        top: 79%;
+        left: 40%;
+    }
+
+}
+
+
+@media screen and (max-width:375px){
+    header{
+        padding: 10px 33px;
+    }
+
+    .person-image img {
+        height: 149px;
+        width: 155px;
+    }
+
+    .home-content {
+        padding: 130px 32px;
+    }
+
+    .home-items {
+        margin-top: 50px;
+    }
+
+    .home-items h1 {
+        font-size: 20px;
+    }
+
+    .home-items span {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .home-items h3 {
+        padding: 7px 0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .home-items button {
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    #home-p-span {
+        font-size: 20px;
+    }
+
+    .home-p {
+        padding: 23px 0;
+    }
+
+    .about-items h1 {
+        font-size: 30px;
+    }
+
+    .about-content {
+        padding: 77px 1px;
+    }
+    .about-p {
+        font-size: 15px;
+    }
+
+    #about-p1 span {
+        font-size: 17px;
+    }
+
+    .skills-content{
+        padding: 123px 100px;
+    }
+
+    .skillbox {
+        height: 312px;
+        width: 311px;
+    }
+    .skills-content h1 {
+        font-size: 30px;
+    }
+
+    .projects-content {
+        padding: 107px 15px;
+    }
+
+    .all-projects {
+        width: 326px;
+    }
+
+    .im img{
+        width: 326px;
+    }
+    .projects-data{
+        width: 326px;
+    }
+
+    .projects-content h1 {
+        font-size: 30px;
+    }
+
+    .contact-content {
+        padding: 160px 7px;
+    }
+
+    .robot img {
+        height: 278px;
+        width: 184px;
+        padding: 0 21px;
+    }
+    .links {
+        gap: 60px;
+    }
+    .one {
+        font-size: 10px;
+        padding: 8px 6px;
+        top: 75%;
+        left: 39%;
+    }
+}
+    
+    
+
