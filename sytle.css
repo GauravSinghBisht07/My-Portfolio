@@ -136,7 +136,10 @@ nav ul li:hover{
 .home-items button:hover{
     background-color: rgb(35, 34, 34);
 }
-
+.home-items button a{
+    text-decoration: none;
+    color: white;
+}
 
 /* ////////////////////////////////////about content css */
 
