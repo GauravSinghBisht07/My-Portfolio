@@ -120,7 +120,10 @@ nav ul li:hover{
     font-weight: 500;
     
 }
-
+.home-items button a{
+    text-decoration: none;
+    color: white;
+}
 .home-items button{
     color: white;
     border: none;
@@ -131,10 +134,6 @@ nav ul li:hover{
     font-size: 15px;
     cursor: pointer;
     background-color: rgba(79, 77, 77, 0.651);
-}
-.home-items button a{
-    text-decoration: none;
-    color: white;
 }
 
 .home-items button:hover{
