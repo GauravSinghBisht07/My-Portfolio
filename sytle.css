@@ -132,14 +132,15 @@ nav ul li:hover{
     cursor: pointer;
     background-color: rgba(79, 77, 77, 0.651);
 }
-
-.home-items button:hover{
-    background-color: rgb(35, 34, 34);
-}
 .home-items button a{
     text-decoration: none;
     color: white;
 }
+
+.home-items button:hover{
+    background-color: rgb(35, 34, 34);
+}
+
 
 /* ////////////////////////////////////about content css */
 
